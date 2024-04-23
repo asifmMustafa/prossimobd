@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       colors: {
         orange: "#FF6300",
+        "orange-light": "#fb923c",
+      },
+      screens: {
+        "md-2": "1024px",
       },
     },
   },

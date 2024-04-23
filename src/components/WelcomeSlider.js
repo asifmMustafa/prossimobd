@@ -8,19 +8,19 @@ import "../slick-styles/slick.css";
 import "../slick-styles/slick-theme.css";
 
 const InnerContent = () => (
-  <div className="w-2/3 pt-52 pb-32 pl-52">
+  <div className="md-2:w-2/3 w-full pt-52 pb-32 md-2:pl-52 md-2:text-start text-center">
     <p className="inline-block py-[1px] px-3 rounded-full font-outfit-light text-l tracking-wide text-white bg-orange">
       Where Innovation meets impact
     </p>
-    <h1 className="py-5 block font-outfit-heavy text-8xl text-white">
+    <h1 className="py-5 block font-outfit-heavy md-2:text-8xl text-5xl text-white">
       Welcome To MSN Group
     </h1>
-    <p className="w-2/3 font-outfit-light text-l tracking-wide text-white">
+    <p className="md-2:w-2/3 font-outfit-light text-l tracking-wide text-white">
       Step into the world of MSN Group, whether it's revolutionizing real estate
       or introducing groundbreaking technologies, we pave the way for a future
       defined by progress and purpose.
     </p>
-    <button className="inline-block mt-6 py-3 px-4 rounded-md font-outfit-light text-l tracking-wide text-white bg-orange">
+    <button className="inline-block mt-6 py-3 px-4 rounded-md font-outfit-light text-l tracking-wide text-white bg-orange hover:bg-orange-light">
       Learn more
     </button>
   </div>
@@ -64,13 +64,13 @@ const WelcomeSlider = () => {
 
       <div
         onClick={previous}
-        className="absolute top-1/2 transform -translate-y-1/2 left-16"
+        className="hidden md-2:block absolute top-1/2 transform -translate-y-1/2 left-16"
       >
         <LeftArrow />
       </div>
       <div
         onClick={next}
-        className="absolute top-1/2 transform -translate-y-1/2 right-16"
+        className="hidden md-2:block absolute top-1/2 transform -translate-y-1/2 right-16"
       >
         <RightArrow />
       </div>
