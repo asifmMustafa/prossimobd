@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-outfit-light {
+.font-outfit-semilight {
   font-family: "Outfit", sans-serif !important;
   font-weight: 300;
+}
+
+.font-outfit-light {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 400;
 }
 
 .font-outfit-heavy {
