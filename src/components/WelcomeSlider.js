@@ -8,14 +8,14 @@ import "../slick-styles/slick.css";
 import "../slick-styles/slick-theme.css";
 
 const InnerContent = () => (
-  <div className="md-2:w-2/3 w-full pt-52 pb-32 md-2:pl-52 md-2:text-start text-center">
+  <div className="lg:w-2/3 w-full pt-52 pb-32 lg:pl-52 lg:text-start text-center">
     <p className="inline-block py-[1px] px-3 rounded-full font-outfit-semilight text-l tracking-wide text-white bg-orange">
       Where Innovation meets impact
     </p>
-    <h1 className="py-5 block font-outfit-heavy md-2:text-8xl text-5xl text-white">
+    <h1 className="py-5 block font-outfit-heavy lg:text-8xl text-5xl text-white">
       Welcome To MSN Group
     </h1>
-    <p className="md-2:w-2/3 font-outfit-semilight text-l tracking-wide text-white">
+    <p className="lg:w-2/3 font-outfit-semilight text-l tracking-wide text-white">
       Step into the world of MSN Group, whether it's revolutionizing real estate
       or introducing groundbreaking technologies, we pave the way for a future
       defined by progress and purpose.
@@ -64,13 +64,13 @@ const WelcomeSlider = () => {
 
       <div
         onClick={previous}
-        className="hidden md-2:block absolute top-1/2 transform -translate-y-1/2 left-16"
+        className="hidden lg:block absolute top-1/2 transform -translate-y-1/2 left-16"
       >
         <LeftArrow />
       </div>
       <div
         onClick={next}
-        className="hidden md-2:block absolute top-1/2 transform -translate-y-1/2 right-16"
+        className="hidden lg:block absolute top-1/2 transform -translate-y-1/2 right-16"
       >
         <RightArrow />
       </div>

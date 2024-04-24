@@ -37,7 +37,7 @@ const Directors = () => {
           Directors
         </h3>
       </div>
-      <div className="sm:py-20 py-10 flex flex-col items-center justify-center">
+      <div className="sm:pt-20 pt-10 pb-10 flex flex-col items-center justify-center">
         {directors.map((director, index) => {
           return (
             <div

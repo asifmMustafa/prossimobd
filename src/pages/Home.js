@@ -4,6 +4,7 @@ import AboutUs from "../components/AboutUs";
 import VideoSlider from "../components/VideoSlider";
 import SisterConcerns from "../components/SisterConcerns";
 import Directors from "../components/Directors";
+import ContactUs from "../components/ContactUs";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <VideoSlider />
       <SisterConcerns />
       <Directors />
+      <ContactUs />
     </div>
   );
 };

@@ -54,23 +54,23 @@ const SisterConcerns = () => {
 
   return (
     <section id="companies">
-      <div className="flex md-2:flex-row flex-col p-10 sm:mb-16 mb-5">
-        <div className="md-2:px-20 md-2:mt-5 mb-10">
-          <p className="mb-4 font-outfit-light text-xl md-2:text-start text-center tracking-wide text-orange">
+      <div className="flex lg:flex-row flex-col p-10 sm:mb-16 mb-5">
+        <div className="lg:px-20 lg:mt-5 mb-10">
+          <p className="mb-4 font-outfit-light text-xl lg:text-start text-center tracking-wide text-orange">
             BRANDS
           </p>
-          <h3 className="font-outfit-heavy md:text-4xl text-2xl md-2:text-start text-center">
+          <h3 className="font-outfit-heavy md:text-4xl text-2xl lg:text-start text-center">
             Our Sister
             <br />
             Concerns.
           </h3>
         </div>
 
-        <div className="lg:pl-32 grid sm:grid-cols-2 grid-cols-1 gap-5 md-2:text-start text-center">
+        <div className="lg:pl-32 grid sm:grid-cols-2 grid-cols-1 gap-5 lg:text-start text-center">
           {concerns.map((concern, index) => (
             <div key={index} className="px-5 pb-5">
               <img
-                className="md-2:-mx-5 mx-auto"
+                className="lg:-mx-5 mx-auto"
                 src={concern.img}
                 alt={concern.title}
               />
