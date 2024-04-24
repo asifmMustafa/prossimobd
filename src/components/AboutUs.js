@@ -64,7 +64,7 @@ const AboutUs = () => {
       </div>
 
       {/* VISION */}
-      <div className="flex md:flex-row flex-col p-10">
+      <div className="flex md:flex-row flex-col p-10 sm:mb-16 mb-5">
         <div className="md:px-20 mb-10">
           <p className="mb-4 font-outfit-light text-xl md:text-start text-center tracking-wide text-orange">
             VISION
