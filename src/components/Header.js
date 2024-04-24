@@ -81,7 +81,7 @@ const Header = () => {
         )}
       </div>
       {isOpen && (
-        <div className="lg:hidden absolute right-10 top-[110px] z-20 bg-white shadow-md rounded-lg px-5 py-2 flex flex-col items-center border-[0.5px] border-gray-400">
+        <div className="lg:hidden absolute right-10 top-[80px] z-20 bg-white shadow-md rounded-lg px-5 py-2 flex flex-col items-center border-[0.5px] border-gray-400">
           {links.map((link, index) => (
             <React.Fragment key={index}>
               {link.text === "Projects" ? (
