@@ -46,7 +46,7 @@ const Directors = () => {
             >
               <div
                 className={`md:w-1/2 w-[90%] flex items-center justify-center ${
-                  (index + 1) % 2 == 0 ? "order-2" : "md:order-1 order-2"
+                  (index + 1) % 2 === 0 ? "order-2" : "md:order-1 order-2"
                 }`}
               >
                 <img
@@ -72,6 +72,7 @@ const Directors = () => {
                   <img
                     className="inline-block ml-1"
                     src="/images/link-arrow-right.png"
+                    alt="arrow"
                   />
                 </p>
               </div>

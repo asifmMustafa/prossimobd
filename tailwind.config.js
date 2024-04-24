@@ -8,7 +8,7 @@ module.exports = {
         "orange-light": "#fb923c",
       },
       screens: {
-        "md-2": "1340px",
+        "lg-2": "1340px",
       },
     },
   },

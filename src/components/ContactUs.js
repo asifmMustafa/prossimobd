@@ -30,13 +30,13 @@ const ContactUs = () => {
         </h3>
       </div>
 
-      <div className="flex lg:flex-row flex-col justify-center m-10 md-2:px-32">
+      <div className="flex lg:flex-row flex-col justify-center m-10 lg-2:px-32">
         {contacts.map((contact, index) => (
           <div
             key={index}
             className="lg:w-1/3 w:1/2 lg:mb-0 mb-10 flex flex-row lg:justify-center items-center gap-5"
           >
-            <img className="" src={contact.img} />
+            <img src={contact.img} alt={contact.name} />
             <div>
               <p className="font-outfit-semilight lg:text-base text-sm text-slate-600">
                 {contact.name}
@@ -49,7 +49,7 @@ const ContactUs = () => {
         ))}
       </div>
 
-      <div className="flex lg:flex-row flex-col m-10 md-2:p-20">
+      <div className="flex lg:flex-row flex-col m-10 lg-2:p-20">
         <div className="lg:w-1/2 lg:px-10 flex flex-col">
           <div className="w-full flex flex-row gap-5">
             <div className="w-1/2">
@@ -103,7 +103,11 @@ const ContactUs = () => {
           </button>
         </div>
 
-        <img className="lg:w-1/2 lg:my-0 my-10" src="/images/map.png" />
+        <img
+          className="lg:w-1/2 lg:my-0 my-10"
+          src="/images/map.png"
+          alt="map"
+        />
       </div>
     </section>
   );
