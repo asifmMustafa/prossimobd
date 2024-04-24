@@ -21,8 +21,14 @@ const Header = () => {
     <div className="fixed top-10 left-1/2 transform -translate-x-1/2 z-20 md:w-[95%] sm:w-[89%] w-[80%] flex justify-center">
       <div className="w-[95%] p-3 flex justify-between rounded-lg bg-white border-[0.5px] border-gray-400">
         <div className="flex flex-row justify-start items-center">
-          <img src="/images/logo.png" alt="logo" />
-          <p className="font-outfit-light text-2xl tracking-wide">Prossimo</p>
+          <img
+            className="transform md:scale-100 scale-75"
+            src="/images/logo.png"
+            alt="logo"
+          />
+          <p className="hidden md:block font-outfit-light text-2xl tracking-wide">
+            Prossimo
+          </p>
         </div>
         <div className="hidden lg:flex flex-row items-center space-x-5 mr-4 font-outfit-semilight text-l tracking-wide">
           {pathname === "/" ? (
@@ -55,7 +61,7 @@ const Header = () => {
             </p>
           )}
         </div>
-        {pathname === "/" && (
+        {pathname === "/" ? (
           <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
             <img
               className="w-7 h-7 mr-2"
@@ -63,6 +69,15 @@ const Header = () => {
               alt="Menu"
             />
           </button>
+        ) : (
+          <div className="lg:hidden flex items-center mr-5">
+            <p
+              onClick={() => navigate("/")}
+              className="hover:text-orange cursor-pointer"
+            >
+              Home
+            </p>
+          </div>
         )}
       </div>
       {isOpen && (
