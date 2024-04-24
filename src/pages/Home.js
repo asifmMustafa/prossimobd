@@ -14,7 +14,6 @@ const Home = () => {
       <Header />
       <WelcomeSlider />
       <AboutUs />
-      <VideoSlider />
       <SisterConcerns />
       <Directors />
       <ContactUs />
