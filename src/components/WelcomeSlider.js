@@ -13,12 +13,12 @@ const InnerContent = () => (
       Where Innovation meets impact
     </p>
     <h1 className="py-5 block font-outfit-heavy lg:text-8xl text-5xl text-white">
-      Welcome To MSN Group
+      Welcome To Prossimo Developments
     </h1>
     <p className="lg:w-2/3 font-outfit-semilight text-l tracking-wide text-white">
-      Step into the world of MSN Group, whether it's revolutionizing real estate
-      or introducing groundbreaking technologies, we pave the way for a future
-      defined by progress and purpose.
+      Step into the world of Prossimo Developments, whether it's revolutionizing
+      real estate or introducing groundbreaking technologies, we pave the way
+      for a future defined by progress and purpose.
     </p>
     <button className="inline-block mt-6 py-3 px-4 rounded-md font-outfit-semilight text-l tracking-wide text-white bg-orange hover:bg-orange-light">
       Learn more

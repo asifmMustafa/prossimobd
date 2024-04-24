@@ -10,12 +10,12 @@ const ContactUs = () => {
     {
       img: "/images/email.png",
       name: "Email",
-      text: "msngroupbd24@gmail.com",
+      text: "prossimodevbd24@gmail.com",
     },
     {
       img: "/images/phone.png",
       name: "Phone",
-      text: "msngroupbd24@gmail.com",
+      text: "prossimodevbd24@gmail.com",
     },
   ];
 

@@ -36,9 +36,10 @@ const AboutUs = () => {
           ABOUT US
         </h3>
         <p className="lg:px-52 md:px-32 px-10 font-outfit-heavy md:text-4xl text-xl text-center tracking-wide">
-          At MSN Group, we are more than just a conglomerate; we are commitment
-          to extending power to remote corners, each entity within our group
-          reflects our dedication to progress and positive impact.
+          At Prossimo Developments Ltd, we are more than just a conglomerate; we
+          are commitment to extending power to remote corners, each entity
+          within our group reflects our dedication to progress and positive
+          impact.
         </p>
 
         {/* STATS */}
