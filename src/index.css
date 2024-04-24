@@ -581,8 +581,40 @@ video {
   top: 70px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-\[110px\] {
+  top: 110px;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.left-32 {
+  left: 8rem;
+}
+
+.top-32 {
+  top: 8rem;
+}
+
+.top-36 {
+  top: 9rem;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .order-2 {
@@ -707,6 +739,18 @@ video {
   height: 1.75rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.min-h-\[500px\] {
+  min-height: 500px;
+}
+
+.min-h-\[1000px\] {
+  min-height: 1000px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -749,6 +793,14 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .-translate-x-1\/2 {
@@ -969,6 +1021,16 @@ video {
   padding-bottom: 1px;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -991,6 +1053,14 @@ video {
 
 .pt-52 {
   padding-top: 13rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-center {
@@ -1024,6 +1094,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .tracking-wide {
@@ -1253,9 +1328,23 @@ video {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .md\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:left-32 {
+    left: 8rem;
+  }
+
   .lg\:-mx-5 {
     margin-left: -1.25rem;
     margin-right: -1.25rem;
@@ -1314,6 +1403,10 @@ video {
     width: 80%;
   }
 
+  .lg\:w-4\/5 {
+    width: 80%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1361,6 +1454,26 @@ video {
     padding-left: 13rem;
   }
 
+  .lg\:pl-44 {
+    padding-left: 11rem;
+  }
+
+  .lg\:pl-40 {
+    padding-left: 10rem;
+  }
+
+  .lg\:pl-36 {
+    padding-left: 9rem;
+  }
+
+  .lg\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
   .lg\:text-start {
     text-align: start;
   }
@@ -1384,5 +1497,10 @@ video {
   .lg-2\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .lg-2\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
