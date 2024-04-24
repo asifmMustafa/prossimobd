@@ -43,11 +43,11 @@ const AboutUs = () => {
 
         {/* STATS */}
         <div className="sm:block flex flex-col items-center text-center my-10 sm:space-x-32">
-          <div className="inline-block s,:text-start">
+          <div className="inline-block sm:text-start">
             <span className="font-outfit-heavy md:text-4xl text-xl text-start text-orange">
               50,000+
             </span>
-            <p className="sm:mt-3 mt-1 text-sm text-slate-600 tracking-wide">
+            <p className="sm:mt-3 mt-1 font-outfit-semilight text-sm text-slate-600 tracking-wide">
               Satisfied customers
             </p>
           </div>
@@ -56,7 +56,7 @@ const AboutUs = () => {
             <span className="font-outfit-heavy md:text-4xl text-xl text-orange">
               6+
             </span>
-            <p className="sm:mt-3 mt-1 text-sm text-slate-600 tracking-wide">
+            <p className="sm:mt-3 mt-1 font-outfit-semilight text-sm text-slate-600 tracking-wide">
               Sister concerns
             </p>
           </div>
@@ -87,7 +87,7 @@ const AboutUs = () => {
               <h4 className="mt-3 font-outfit-heavy sm:text-2xl text-xl">
                 {vision.title}
               </h4>
-              <p className="mt-2 text-sm text-slate-600 tracking-wide">
+              <p className="mt-2 font-outfit-semilight text-sm text-slate-600 tracking-wide">
                 {vision.description}
               </p>
             </div>
