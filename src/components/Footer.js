@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
   return (
     <section className="bg-[rgb(14,26,34)] px-10 pt-10 pb-5">
       <div className="w-full flex lg:flex-row flex-col lg:justify-around border-b-2 border-white pb-10">
@@ -50,22 +54,40 @@ const Footer = () => {
         <div className="flex flex-col lg:text-start text-center text-white lg:mt-0 mt-10">
           <p className="font-outfit-medium mb-5">Links</p>
           <div className="flex flex-col font-outfit-light text-sm space-y-1">
-            <Link
-              className="hover:text-orange cursor-pointer"
-              spy={true}
-              smooth={true}
-              to="about"
-            >
-              About Us
-            </Link>
-            <Link
-              className="hover:text-orange cursor-pointer"
-              spy={true}
-              smooth={true}
-              to="contact"
-            >
-              Contact Us
-            </Link>
+            {pathname === "/" ? (
+              <Link
+                className="hover:text-orange cursor-pointer"
+                spy={true}
+                smooth={true}
+                to="about"
+              >
+                About Us
+              </Link>
+            ) : (
+              <p
+                className="hover:text-orange cursor-pointer"
+                onClick={() => navigate("/")}
+              >
+                About Us
+              </p>
+            )}
+            {pathname === "/" ? (
+              <Link
+                className="hover:text-orange cursor-pointer"
+                spy={true}
+                smooth={true}
+                to="contact"
+              >
+                Contact Us
+              </Link>
+            ) : (
+              <p
+                className="hover:text-orange cursor-pointer"
+                onClick={() => navigate("/")}
+              >
+                Contact Us
+              </p>
+            )}
             <Link className="hover:text-orange cursor-pointer">Sitemap</Link>
             <Link className="hover:text-orange cursor-pointer">Faq</Link>
           </div>
