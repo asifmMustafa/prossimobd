@@ -19,14 +19,14 @@ const Header = () => {
 
   return (
     <div className="fixed top-10 left-1/2 transform -translate-x-1/2 z-20 md:w-[95%] sm:w-[89%] w-[80%] flex justify-center">
-      <div className="w-[95%] p-3 flex justify-between rounded-lg bg-white border-[0.5px] border-gray-400">
+      <div className="w-[95%] lg:p-3 flex justify-between rounded-lg bg-white border-[0.5px] border-gray-400">
         <div className="flex flex-row justify-start items-center">
           <img
-            className="transform md:scale-100 scale-75"
+            className="transform lg:scale-100 scale-75"
             src="/images/logo.png"
             alt="logo"
           />
-          <p className="hidden md:block font-outfit-light text-2xl tracking-wide">
+          <p className="hidden lg:block font-outfit-light text-2xl tracking-wide">
             Prossimo
           </p>
         </div>
@@ -64,7 +64,7 @@ const Header = () => {
         {pathname === "/" ? (
           <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
             <img
-              className="w-7 h-7 mr-2"
+              className="w-7 h-7 mr-5"
               src="/images/hamburger.png"
               alt="Menu"
             />
