@@ -13,9 +13,12 @@ const Header = () => {
   ];
 
   return (
-    <div className="absolute top-0 z-20 m-10 md:w-[95%] sm:w-[89%] w-[80%] flex justify-center">
-      <div className="w-[95%] p-3 flex justify-between rounded-lg bg-white">
-        <img src="/images/logo.png" alt="logo" />
+    <div className="fixed top-10 left-1/2 transform -translate-x-1/2 z-20 md:w-[95%] sm:w-[89%] w-[80%] flex justify-center">
+      <div className="w-[95%] p-3 flex justify-between rounded-lg bg-white border-[0.5px] border-gray-400">
+        <div className="flex flex-row justify-start items-center">
+          <img src="/images/logo.png" alt="logo" />
+          <p className="font-outfit-light text-2xl tracking-wide">Prossimo</p>
+        </div>
         <div className="hidden lg:flex flex-row items-center space-x-5 mr-4 font-outfit-semilight text-l tracking-wide">
           {links.map((link, index) => (
             <Link
@@ -38,7 +41,7 @@ const Header = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="lg:hidden absolute right-10 top-[110px] z-20 bg-white shadow-md rounded-lg px-5 py-2 flex flex-col items-center">
+        <div className="lg:hidden absolute right-10 top-[110px] z-20 bg-white shadow-md rounded-lg px-5 py-2 flex flex-col items-center border-[0.5px] border-gray-400">
           {links.map((link, index) => (
             <React.Fragment key={index}>
               <Link

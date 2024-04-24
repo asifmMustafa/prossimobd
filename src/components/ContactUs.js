@@ -10,12 +10,12 @@ const ContactUs = () => {
     {
       img: "/images/email.png",
       name: "Email",
-      text: "prossimodevbd24@gmail.com",
+      text: "prossimodevelopmentsltd@gmail.com",
     },
     {
       img: "/images/phone.png",
       name: "Phone",
-      text: "prossimodevbd24@gmail.com",
+      text: "+9601100222",
     },
   ];
 
@@ -41,7 +41,11 @@ const ContactUs = () => {
               <p className="font-outfit-semilight lg:text-base text-sm text-slate-600">
                 {contact.name}
               </p>
-              <p className="font-outfit-light lg:text-base text-sm">
+              <p
+                className={`${
+                  contact.name === "Address" ? "lg:w-[70%]" : ""
+                } font-outfit-light lg:text-base text-sm`}
+              >
                 {contact.text}
               </p>
             </div>

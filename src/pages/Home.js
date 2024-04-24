@@ -6,10 +6,12 @@ import SisterConcerns from "../components/SisterConcerns";
 import Directors from "../components/Directors";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <div>
+    <div className="relative">
+      <Header />
       <WelcomeSlider />
       <AboutUs />
       <VideoSlider />

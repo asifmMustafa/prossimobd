@@ -11,9 +11,7 @@ const Footer = () => {
             src="/images/Prossimo.png"
             alt="logo"
           />
-          <p className="font-outfit-light text-white tracking-wide">
-            Prossimo Developments Ltd
-          </p>
+          <p className="font-outfit-light text-white tracking-wide">Prossimo</p>
           <p className="font-outfit-semilight text-sm text-white tracking-wide">
             Achieve global distinction through innovation and sustainability
           </p>
@@ -81,7 +79,7 @@ const Footer = () => {
             <p>Nababpur road, Dhaka-1100</p>
             <p className="text-[rgb(14,26,34)]">break</p>
             <p>Email:</p>
-            <p>msngroupbd24@gmail.com</p>
+            <p>prossimodevelopmentsltd@gmail.com</p>
           </div>
         </div>
       </div>
@@ -89,7 +87,7 @@ const Footer = () => {
       <div className="mt-5 flex lg:flex-row flex-col lg:justify-between lg:items-start items-center lg:text-start  text-center text-white font-outfit-light">
         <p>
           Copyright © 2024,{" "}
-          <span className="text-orange cursor-pointer">prossimodev.com</span>
+          <span className="text-orange cursor-pointer">prossimo.com</span>
         </p>
         <div className="flex flex-row space-x-2 lg:mt-0 mt-2">
           <p className="cursor-pointer">Privacy Policy</p>
