@@ -1,5 +1,6 @@
 {
   "name": "prossimo-dev-website",
+  "homepage": "https://prossimobd.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
