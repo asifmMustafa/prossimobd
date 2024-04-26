@@ -1,5 +1,5 @@
 import React from "react";
-import WelcomeSlider from "../components/WelcomeSlider";
+import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import SisterConcerns from "../components/SisterConcerns";
 import Directors from "../components/Directors";
@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="relative">
       <Header />
-      <WelcomeSlider />
+      <Hero />
       <AboutUs />
       <SisterConcerns />
       <Directors />

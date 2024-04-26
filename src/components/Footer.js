@@ -19,18 +19,6 @@ const Footer = () => {
           <p className="font-outfit-semilight text-sm text-white tracking-wide">
             Achieve global distinction through innovation and sustainability
           </p>
-          <div className="flex flex-row gap-3 mt-10 lg:justify-start justify-center">
-            {["facebook.png", "twitter-x.png", "instagram.png"].map(
-              (social, index) => (
-                <img
-                  key={index}
-                  className="w-8 cursor-pointer"
-                  src={`/images/${social}`}
-                  alt={social}
-                />
-              )
-            )}
-          </div>
         </div>
 
         <div className="flex flex-col lg:text-start text-center text-white lg:mt-0 mt-10">
@@ -75,6 +63,7 @@ const Footer = () => {
               <Link
                 className="hover:text-orange cursor-pointer"
                 spy={true}
+                offset={-140}
                 smooth={true}
                 to="contact"
               >

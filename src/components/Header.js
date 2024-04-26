@@ -9,7 +9,7 @@ const Header = () => {
   const { pathname } = useLocation();
 
   const links = [
-    { text: "Home", id: "home" },
+    { text: "Home", id: "hero" },
     { text: "Companies", id: "companies" },
     { text: "About Us", id: "about" },
     { text: "Board of Directors", id: "directors" },
@@ -39,13 +39,14 @@ const Header = () => {
                   onClick={() => navigate("/pdl-projects")}
                   className="hover:text-orange cursor-pointer"
                 >
-                  Projects
+                  PDL Projects
                 </p>
               ) : (
                 <Link
                   key={index}
                   className="hover:text-orange cursor-pointer"
                   spy={true}
+                  offset={-140}
                   smooth={true}
                   to={link.id}
                 >
@@ -90,12 +91,13 @@ const Header = () => {
                   onClick={() => navigate("/pdl-projects")}
                   className="py-2 hover:text-orange cursor-pointer"
                 >
-                  Projects
+                  PDL Projects
                 </p>
               ) : (
                 <Link
                   className="py-2 hover:text-orange cursor-pointer text-center w-full"
                   spy={true}
+                  offset={-120}
                   smooth={true}
                   to={link.id}
                   onClick={() => setIsOpen(!isOpen)}

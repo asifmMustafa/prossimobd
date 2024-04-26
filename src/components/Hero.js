@@ -2,11 +2,12 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import LeftArrow from "./LeftArrow";
 import RightArrow from "./RightArrow";
+import { Link } from "react-scroll";
 
 import "../slick-styles/slick.css";
 import "../slick-styles/slick-theme.css";
 
-const WelcomeSlider = () => {
+const Hero = () => {
   const sliderRef = useRef(null);
 
   const next = () => {
@@ -27,7 +28,7 @@ const WelcomeSlider = () => {
   };
 
   return (
-    <section id="home" className="relative">
+    <section id="hero" className="relative">
       <div className="absolute lg:w-4/5 w-full top-36 lg:left-32 left-0 z-10 flex">
         <div className="lg:w-2/3 w-full lg:pt-32 pt-20 lg:pl-36 md:px-20 px-10 lg:text-start text-center">
           <p className="inline-block py-[1px] px-3 rounded-full font-outfit-semilight text-l tracking-wide text-white bg-orange">
@@ -41,14 +42,20 @@ const WelcomeSlider = () => {
             estate or introducing groundbreaking technologies, we pave the way
             for a future defined by progress and purpose.
           </p>
-          <button className="inline-block mt-6 py-3 px-4 rounded-md font-outfit-semilight text-l tracking-wide text-white bg-orange hover:bg-orange-light">
+          <Link
+            spy={true}
+            offset={-140}
+            smooth={true}
+            to="about"
+            className="inline-block mt-6 py-3 px-4 rounded-md font-outfit-semilight text-l tracking-wide text-white bg-orange hover:bg-orange-light cursor-pointer"
+          >
             Learn more
-          </button>
+          </Link>
         </div>
       </div>
 
       <Slider ref={sliderRef} {...sliderSettings}>
-        <div className="p-10 bg-[url('/public/images/bg-1.png')] bg-cover min-h-[1000px]"></div>
+        <div className="p-10 bg-[url('/public/images/bg-1.jpg')] bg-cover min-h-[1000px]"></div>
         <div className="p-10 bg-[url('/public/images/bg-4.jpg')] bg-cover min-h-[1000px]"></div>
         <div className="p-10 bg-[url('/public/images/bg-2.jpg')] bg-cover min-h-[1000px]"></div>
         <div className="p-10 bg-[url('/public/images/bg-3.jpg')] bg-cover min-h-[1000px]"></div>
@@ -70,4 +77,4 @@ const WelcomeSlider = () => {
   );
 };
 
-export default WelcomeSlider;
+export default Hero;

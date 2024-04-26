@@ -29,19 +29,11 @@ const Profile = ({ index, director }) => {
           }}
           className="mt-8 font-outfit-semilight text-sm text-slate-600 tracking-wide"
         ></p>
-        <button
+        <p
           onClick={() => setIsExpanded(!isExpanded)}
-          className="mt-1 font-outfit-light text-sm text-slate-800 tracking-wide"
+          className="mt-10 font-outfit-medium cursor-pointer"
         >
-          {isExpanded ? "Show Less" : "Load More"}
-        </button>
-        <p className="mt-10 font-outfit-medium cursor-pointer">
-          Learn More{" "}
-          <img
-            className="inline-block ml-1"
-            src="/images/link-arrow-right.png"
-            alt="arrow"
-          />
+          {isExpanded ? "Show Less" : "Learn More"}
         </p>
       </div>
     </div>

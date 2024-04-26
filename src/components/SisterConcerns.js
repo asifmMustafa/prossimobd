@@ -6,7 +6,7 @@ const SisterConcerns = () => {
       img: "/images/Prossimo.png",
       title: "Prossimo Developments Ltd",
       description:
-        "An established ISP in Bangladesh, specializing in A Category Internet services, and dedicated to strategic expansion.",
+        "Premier real estate developer in Bangladesh. Elevating living standards through distinctive projects. Transforming visions in reality.",
       phone: "+9601100222",
       email: "prossimodevelopmentsltd@gmail.com",
     },
