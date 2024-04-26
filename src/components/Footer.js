@@ -36,18 +36,18 @@ const Footer = () => {
         <div className="flex flex-col lg:text-start text-center text-white lg:mt-0 mt-10">
           <p className="font-outfit-medium mb-5">Brands</p>
           <div className="font-outfit-light text-sm space-y-1">
-            <p className="hover:text-orange cursor-pointer">Prossimo</p>
-            <p className="hover:text-orange cursor-pointer">Noor Eco Bricks</p>
-            <p className="hover:text-orange cursor-pointer">Noor Power LTD</p>
-            <p className="hover:text-orange cursor-pointer">
-              Bismillah Telecom
-            </p>
-            <p className="hover:text-orange cursor-pointer">
-              Mujhtoba Electric & Electronics
-            </p>
-            <p className="hover:text-orange cursor-pointer">
-              Mujhtoba Hardware & Machinery
-            </p>
+            {[
+              "Prossimo Developments Ltd",
+              "Noor Eco Bricks",
+              "Noor Power LTD",
+              "Bismillah Telecom",
+              "Mujtoba Electric & Electronics",
+              "Mujtoba Hardware & Machinery",
+            ].map((brand, index) => (
+              <p key={index} className="hover:text-orange cursor-pointer">
+                {brand}
+              </p>
+            ))}
           </div>
         </div>
 

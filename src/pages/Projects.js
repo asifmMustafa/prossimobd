@@ -145,6 +145,31 @@ const Projects = () => {
             );
           })}
         </div>
+
+        <div className="text-center">
+          <h3 className="font-outfit-heavy md:text-5xl text-3xl text-center">
+            Notable Upcoming Project
+          </h3>
+        </div>
+
+        <div className="pt-10 pb-10 flex flex-col items-center justify-center">
+          <div
+            className={`md:w-1/2 w-full p-10 flex flex-col items-center justify-center md:text-left text-center md:order-1 order-2`}
+          >
+            <h3 className="font-outfit-heavy md:text-4xl text-3xl md:text-start text-center">
+              Prossimo Clock Tower
+            </h3>
+            <p className="mt-8 font-outfit-semilight text-xl text-slate-600 tracking-wide">
+              Location: Mayakatra, Sadarghat, Dhaka
+            </p>
+            <p className="mt-1 font-outfit-semilight text-xl text-slate-600 tracking-wide">
+              Type of Project: Commercial
+            </p>
+            <p className="mt-1 font-outfit-semilight text-xl text-slate-600 tracking-wide">
+              Construction area: 40 Storied Building
+            </p>
+          </div>
+        </div>
       </div>
 
       <Footer />

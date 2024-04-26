@@ -22,7 +22,8 @@ const Header = () => {
       <div className="w-[95%] lg:p-3 flex justify-between rounded-lg bg-white border-[0.5px] border-gray-400">
         <div className="flex flex-row justify-start items-center">
           <img
-            className="transform lg:scale-100 scale-75"
+            onClick={() => navigate("/")}
+            className="transform lg:scale-100 scale-75 cursor-pointer"
             src="/images/logo.png"
             alt="logo"
           />

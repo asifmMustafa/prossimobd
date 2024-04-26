@@ -108,7 +108,7 @@ const ContactUs = () => {
         </div>
 
         <img
-          className="lg:w-1/2 lg:my-0 my-10"
+          className="lg:w-1/2 lg:my-0 my-10 rounded-3xl"
           src="/images/map.png"
           alt="map"
         />

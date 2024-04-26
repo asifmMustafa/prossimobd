@@ -49,6 +49,7 @@ const WelcomeSlider = () => {
 
       <Slider ref={sliderRef} {...sliderSettings}>
         <div className="p-10 bg-[url('/public/images/bg-1.png')] bg-cover min-h-[1000px]"></div>
+        <div className="p-10 bg-[url('/public/images/bg-4.jpg')] bg-cover min-h-[1000px]"></div>
         <div className="p-10 bg-[url('/public/images/bg-2.jpg')] bg-cover min-h-[1000px]"></div>
         <div className="p-10 bg-[url('/public/images/bg-3.jpg')] bg-cover min-h-[1000px]"></div>
       </Slider>

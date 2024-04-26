@@ -1,4 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+
+const Profile = ({ index, director }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div className="flex md:flex-row flex-col items-center justify-center lg:w-[80%] md:w-[90%] lg:mb-20 mb-10">
+      <div
+        className={`md:w-1/2 w-[90%] flex items-center justify-center ${
+          (index + 1) % 2 === 0 ? "order-2" : "md:order-1 order-2"
+        }`}
+      >
+        <img className="rounded-[5%]" src={director.img} alt={director.name} />
+      </div>
+      <div
+        className={`md:w-1/2 w-full p-10 flex flex-col md:items-start items-center justify-center md:text-left text-center md:order-1 order-2`}
+      >
+        <p className="mb-4 font-outfit-light text-xl text-center tracking-wide text-orange">
+          {director.position}
+        </p>
+        <h3 className="font-outfit-heavy md:text-5xl text-3xl md:text-start text-center">
+          {director.name}
+        </h3>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: isExpanded
+              ? director.description
+              : `${director.description.split("<br /><br />")[0]}...`,
+          }}
+          className="mt-8 font-outfit-semilight text-sm text-slate-600 tracking-wide"
+        ></p>
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="mt-1 font-outfit-light text-sm text-slate-800 tracking-wide"
+        >
+          {isExpanded ? "Show Less" : "Load More"}
+        </button>
+        <p className="mt-10 font-outfit-medium cursor-pointer">
+          Learn More{" "}
+          <img
+            className="inline-block ml-1"
+            src="/images/link-arrow-right.png"
+            alt="arrow"
+          />
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const Directors = () => {
   const directors = [
@@ -39,46 +87,7 @@ const Directors = () => {
       </div>
       <div className="sm:pt-20 pt-10 pb-10 flex flex-col items-center justify-center">
         {directors.map((director, index) => {
-          return (
-            <div
-              key={index}
-              className="flex md:flex-row flex-col items-center justify-center lg:w-[80%] md:w-[90%] lg:mb-20 mb-10"
-            >
-              <div
-                className={`md:w-1/2 w-[90%] flex items-center justify-center ${
-                  (index + 1) % 2 === 0 ? "order-2" : "md:order-1 order-2"
-                }`}
-              >
-                <img
-                  className="rounded-[5%]"
-                  src={director.img}
-                  alt={director.name}
-                />
-              </div>
-              <div
-                className={`md:w-1/2 w-full p-10 flex flex-col md:items-start items-center justify-center md:text-left text-center md:order-1 order-2`}
-              >
-                <p className="mb-4 font-outfit-light text-xl text-center tracking-wide text-orange">
-                  {director.position}
-                </p>
-                <h3 className="font-outfit-heavy md:text-5xl text-3xl md:text-start text-center">
-                  {director.name}
-                </h3>
-                <p
-                  dangerouslySetInnerHTML={{ __html: director.description }}
-                  className="mt-8 font-outfit-semilight text-sm text-slate-600 tracking-wide"
-                ></p>
-                <p className="mt-10 font-outfit-medium cursor-pointer">
-                  Learn More{" "}
-                  <img
-                    className="inline-block ml-1"
-                    src="/images/link-arrow-right.png"
-                    alt="arrow"
-                  />
-                </p>
-              </div>
-            </div>
-          );
+          return <Profile key={index} index={index} director={director} />;
         })}
       </div>
     </section>

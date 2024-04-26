@@ -50,11 +50,11 @@ const VideoSlider = () => {
 
   return (
     <section className="mb-20">
-      <Slider ref={sliderRef} {...sliderSettings}>
+      {/* <Slider ref={sliderRef} {...sliderSettings}>
         <VideoPlayer src="/videos/demo.mp4" />
         <VideoPlayer src="/videos/demo.mp4" />
         <VideoPlayer src="/videos/demo.mp4" />
-      </Slider>
+      </Slider> */}
 
       <div className="flex flex-row justify-center gap-4 mt-5">
         <div onClick={previous}>
